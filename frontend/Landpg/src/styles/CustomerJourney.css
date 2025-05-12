@@ -1,0 +1,136 @@
+.customer-journey {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #1a1530;
+  color: white;
+}
+
+.subtitle-cj {
+  color: #1de2d1;
+  font-size: 1rem;
+  padding-left: 50px !important;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.title-cj {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 50px !important ; 
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+
+.journey-stages {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  padding-bottom: 2rem;
+}
+
+.stage-card {
+  background-color: #1a1333;
+  border: 1px solid #c08c70;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 220px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-bottom: 1.2rem; /* Space between cards */
+}
+
+.stage-card:hover {
+  background-color: #3e40ff;
+  color: white;
+  border-color: #3e40ff;
+}
+
+.stage-label {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #c08c70;
+  font-weight: 600;
+}
+
+.learn-more {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #3e40ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #3e40ff;
+}
+
+.icon {
+  margin-bottom: 0.5rem;
+  color: #c08c70;
+  transition: color 0.3s;
+}
+
+.stage-card:hover .icon {
+  color: rgb(173, 98, 44);
+}
+.stage-card p {
+  text-align: justify;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .journey-stages {
+    justify-content: center;
+  }
+
+  .stage-card {
+    width: 160px; /* Adjust card width for medium screens */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .learn-more {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-stages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stage-card {
+    width: 90%; /* Make the card width responsive */
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .learn-more {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

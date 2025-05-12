@@ -1,0 +1,177 @@
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #3c3de3; /* Deep vibrant blue */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px 30px 20px;;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 350px; /* So it doesn’t grow beyond this size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.hero-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  animation: slideInLeft 1.2s ease forwards;
+}
+
+.tag-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: slideInLeft 1.4s ease forwards;
+}
+
+.tag {
+  background: transparent;
+  border: 1px solid #ffffff66;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.discover {
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 0.8;
+  animation: fadeInUp 1.6s ease forwards;
+}
+
+.discover span {
+  display: inline-block;
+  margin-left: 8px;
+  transform: translateY(2px);
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.leftal {
+  text-align: left;
+  width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 200px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .tag-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.discover {
+  
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Space between text and button */
+  animation: fadeInUp 1.6s ease forwards;
+}
+
+.discover p {
+ 
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.discover-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: rgb(237, 134, 7);
+  transform: translateY(4px);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}

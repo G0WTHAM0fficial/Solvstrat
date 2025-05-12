@@ -1,0 +1,151 @@
+/* Footer Main Styles */
+.footer {
+  background-color: #3E47C2;
+  color: white;
+  padding: 40px 20px 0 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Section */
+.footer-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  margin-right: 30px;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  max-width: 100%;
+  height: auto;
+  width: 130px;
+}
+
+.footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Info Section */
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column p {
+  margin: 4px 0;
+  line-height: 1;
+}
+
+/* Bottom Strip */
+.footer-bottom-strip {
+  height: 20px;
+  background-color: #0000BB;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Tablet and Desktop Layout */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-logo-section {
+    flex-basis: 35%;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-basis: 25%;
+    margin-right: 20px;
+  }
+
+  .footer-info {
+    flex-basis: 20%;
+  }
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo-section {
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .footer-links,
+  .footer-info {
+    align-items: center;
+  }
+
+  .footer-column {
+    align-items: center;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,239 @@
+/* Hero Section */
+.homeintro-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #3c3de3;
+  color: #fff;
+}
+
+.homeintro-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.homeintro-learn-more {
+  background-color: #fff;
+  color: #2b2be6;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homeintro-learn-more:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.homeintro-arrow {
+  margin-left: 8px;
+}
+
+/* Solutions Section */
+.homeintro-solutions {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.homeintro-header {
+  margin-bottom: 40px;
+}
+
+.homeintro-subtitle {
+  font-size: 20px;
+  color: #faea05;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.homeintro-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f8f5f5;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.homeintro-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.homeintro-card {
+  flex: 1 1 200px;
+  max-width: 240px;
+  padding: 10px 10px;
+  background-color: #3eb0c4;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 220px;
+  align-items: center;
+}
+
+.homeintro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.homeintro-card h3,
+.homeintro-card p {
+  color: #fff;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+/* Center Image and Button */
+.homeintro-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeintro-center img {
+  max-width: 250px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.homeintro-center img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.homeintro-get-started {
+  background-color: #2b2be6;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homeintro-get-started:hover {
+  background-color: #1a1ad1;
+}
+
+/* Round Arrow Buttons for Both Text Cards */
+.homeintro-card .homeintro-arrow-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #0019d6;
+  color: #fefeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homeintro-card .homeintro-arrow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .homeintro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeintro-text {
+    font-size: 16px;
+  }
+
+  .homeintro-title {
+    font-size: 24px;
+  }
+
+  .homeintro-card {
+    width: 90%;
+  }
+}
+
+.curve-wrapper {
+  background-color: #3c3de3;
+  width: 100%;
+  height: 200px;
+}
+
+.bgedit {
+  background: linear-gradient(to bottom, #3c3de3 60%,  #1a1333 40%);
+  padding: 3rem 0;
+}
+
+
+/* Image card wrapper for relative positioning */
+.homeintro-image-card {
+  position: relative;
+  display: inline-block;
+}
+
+.homeintro-image-card img {
+  max-width: 350px;
+  display: block;
+}
+
+/* Style the button inside the image */
+.homeintro-get-started {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homeintro-get-started:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(-50%) scale(1.05);
+}
+
+.card-subtitle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.card-subtitle-row p {
+  margin: 0;
+  font-size: 20px;
+  flex: 1; /* ensures the text takes up available space */
+  color: #fff;
+}
+
+.homeintro-arrow-btn {
+  flex-shrink: 0; /* prevents button from shrinking */
+}
